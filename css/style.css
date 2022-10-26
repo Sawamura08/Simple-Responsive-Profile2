@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Variables */
+:root {
+	--BACKGROUND: #d5e6df;
+	--PRIMARY-COLOR: #596269;
+	--BTN-COLOR: #bff2da;
+	--HEADER-FW: 600;
+	--NORMAL-FW: 400;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--BACKGROUND);
+}
+
+/* General Style */
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+}
+
+.description-container {
+	padding: 1.2rem;
+	width: 100%;
+}
+
+.container .description-container .dot {
+	font-size: 2rem;
+	color: var(--PRIMARY-COLOR);
+	opacity: 0.5;
+	margin-bottom: 1.2rem;
+}
+
+.container .description-container h1 {
+	font-size: 2.2rem;
+	color: var(--PRIMARY-COLOR);
+}
+
+.container .description-container p {
+	font-size: 1rem;
+	color: var(--PRIMARY-COLOR);
+	line-height: 2;
+	margin: 1rem 0;
+}
+
+.container .description-container .btn {
+	font-size: 1rem;
+	font-weight: var(--HEADER-FW);
+	padding: 1rem 1.5rem;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	width: 100%;
+	background-color: var(--BTN-COLOR);
+	color: var(--PRIMARY-COLOR);
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+
+.container .description-container .btn:is(:hover) {
+	opacity: 0.8;
+}
+
+/* images */
+
+.tokyo .photo-container .tokyo-img {
+	width: 100%;
+}
+
+.kyoto .photo-container .kyoto-img {
+	width: 100%;
+}
+
+.fuji .photo-container .fuji-img {
+	width: 100%;
+}
+
+.himeji .photo-container .himeji-img {
+	width: 100%;
+}
+
+/* footer */
+
+footer {
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.socials i {
+	background-color: #ffffff;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	color: var(--PRIMARY-COLOR);
+	padding: 0.5rem;
+}
+
+footer p {
+	color: var(--PRIMARY-COLOR);
+	opacity: 0.5;
+}
+
+/* Ipad and tablets */
+
+@media all and (width > 600px) and (height > 800px) and (orientation: portrait) {
+	.socials {
+		width: 50%;
+		margin: 2rem auto;
+	}
+}
+
+@media all and (width > 1000px) and (height > 1000px) and (orientation: portrait) {
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+
+	.container .description-container {
+		padding: 0 5rem;
+	}
+
+	.tokyo {
+		margin-top: 7rem;
+	}
+
+	.tokyo .photo-container .tokyo-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.tokyo .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.kyoto .photo-container {
+		order: 1;
+	}
+
+	.kyoto .photo-container .kyoto-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.kyoto .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.fuji .photo-container .fuji-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.fuji .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.himeji .photo-container {
+		order: 1;
+	}
+
+	.himeji .photo-container .himeji-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.himeji .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.socials {
+		width: 30%;
+		margin: 2rem auto;
+	}
+}
+
+@media all and (width > 1000px) and (height >= 600px) and (orientation: landscape) {
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+
+	.container .description-container {
+		padding: 0 5rem;
+	}
+
+	.tokyo {
+		margin-top: 7rem;
+	}
+
+	.tokyo .photo-container .tokyo-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.tokyo .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.kyoto .photo-container {
+		order: 1;
+	}
+
+	.kyoto .photo-container .kyoto-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.kyoto .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.fuji .photo-container .fuji-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.fuji .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.himeji .photo-container {
+		order: 1;
+	}
+
+	.himeji .photo-container .himeji-img {
+		width: 23rem;
+		height: 32rem;
+	}
+
+	.himeji .description-container .dot {
+		margin-top: 5rem;
+	}
+
+	.socials {
+		width: 30%;
+		margin: 2rem auto;
+	}
+}
+
+@media all and (width >= 1280px) and (height >= 800px) and (orientation: landscape) {
+	.container .description-container {
+		padding: 0 8rem;
+	}
+
+	.tokyo .photo-container .tokyo-img {
+		width: 30rem;
+		height: 35rem;
+	}
+
+	.kyoto .photo-container .kyoto-img {
+		width: 30rem;
+		height: 35rem;
+	}
+
+	.fuji .photo-container .fuji-img {
+		width: 30rem;
+		height: 35rem;
+	}
+
+	.himeji .photo-container .himeji-img {
+		width: 30rem;
+		height: 35rem;
+	}
+
+	.socials {
+		width: 25%;
+	}
+}
+
+@media all and (width > 1400px) and (height >= 900px) and (orientation: landscape) {
+	.container .description-container {
+		padding: 0 10rem;
+	}
+
+	.tokyo .photo-container .tokyo-img {
+		width: 35rem;
+		height: 40rem;
+	}
+
+	.kyoto .photo-container .kyoto-img {
+		width: 35rem;
+		height: 40rem;
+	}
+
+	.fuji .photo-container .fuji-img {
+		width: 35rem;
+		height: 40rem;
+	}
+
+	.himeji .photo-container .himeji-img {
+		width: 35rem;
+		height: 40rem;
+	}
+
+	.socials {
+		width: 25%;
+	}
+}
