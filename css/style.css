@@ -257,7 +257,7 @@ footer p {
 	}
 }
 
-@media all and (width >= 1280px) and (height >= 800px) and (orientation: landscape) {
+@media all and (width >= 1280px) and (height >= 550px) and (orientation: landscape) {
 	.container .description-container {
 		padding: 0 8rem;
 	}
